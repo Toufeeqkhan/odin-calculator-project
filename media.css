@@ -18,6 +18,7 @@
     }
 
     .input{
+        padding: 30px;
         grid-template-columns: repeat(4, 8vmax);
         grid-template-rows: repeat(5, 8vmax);
     }
@@ -32,7 +33,16 @@
     }
 
     #theme{
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
+    }
+ }
+
+ @media (max-width: 480px) and  (max-height: 900px){
+
+    .input{
+        grid-template-columns: repeat(4, 9.5vmax);
+        grid-template-rows: repeat(5, 9.5vmax);
+        gap: 28px;
     }
  }
