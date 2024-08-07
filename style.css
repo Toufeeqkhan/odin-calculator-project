@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Zen Maru Gothic", serif;
+}
+
+:root{
+  --permanent-color :#fa5260;
+  --round-color :#f8e2e3;
+  --light-round-color: #efd6d9;
+  --dark-shadow-color: #efd6d9;
+  --body-color: white;
+  --input-area-color: #f8f8f8;
+  --button-color: black;
+  --num-hover-back-color: #f8e2e3;
+  --num-hover-color: #fa5360;
+}
+/* :root{
+  --permanent-color :#fa5260;
+  --round-color :#5f605e;
+  --light-round-color: #5f605e;
+  --dark-shadow-color: #3b3b3b;
+  --body-color: #303030;
+  --input-area-color: #444444;
+  --button-color: white;
+  --num-hover-back-color: rgba(236, 236, 236, 0.205);
+  --num-hover-color: #fa5360;
+} */
+body {
+    background-color: #e0e0e0;
+}
+
+.container {
+    margin: auto;
+    margin-top: 30px;
+    height: 600px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 1rem;
+    background-color: var(--body-color);
+    box-shadow: 5px 5px 10px hsla(0, 0%, 25%, 0.336),
+    -5px -5px 10px hsla(0, 0%, 78%, 0.301);
+}
+
+.display {
+    height: 30%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+}
+
+.display > h1{
+    color: var(--permanent-color);
+    font-size: 60px;
+    margin-top: 1rem;
+}
+
+.display > p{
+    color: #b2b2b2;
+}
+
+.entry-point {
+    height:70%;
+    background-color: var(--input-area-color);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 1rem;
+}
+
+.input {
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 50px);
+    grid-template-rows: repeat(auto-fill, 50px);
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+}
+
+main button {
+    border-style: none;background-color: var(--input-area-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: var(--button-color);
+    transition: all ease 200ms;
+}
+main button:hover{
+    background-color: var(--num-hover-back-color);
+    border-radius: 50%;
+    color: var(--num-hover-color);
+}
+.input .round {
+    text-align: center;
+    color: var(--permanent-color);
+    font-weight: 700;
+    background-color: var(--round-color);
+    border-radius: 50%;
+    border-radius: 50%;
+    box-shadow: 2px 5px 5px var(--light-shadow-color);
+    transition: all ease 200ms;
+}
+
+.input .round:hover{
+   border-radius: 10px;
+}
+
+.input #big {
+    grid-column: span 2;
+    border-radius: 0px;
+    border-radius: 5rem;
+    color: #f8e2e3;
+    background: linear-gradient(145deg, #fa5260, #fd636f);
+    box-shadow: 2px 5px 5px var(--dark-shadow-color);
+    transition: all ease 200ms;
+}
+
+.input #big:hover{
+    transform: scale(0.95);
+}
