@@ -16,10 +16,9 @@
   --body-color: white;
   --input-area-color: #f8f8f8;
   --button-color: black;
-  --num-hover-back-color: #f8e2e3;
   --num-hover-color: #fa5360;
 }
-/* :root{
+:root{
   --permanent-color :#fa5260;
   --round-color :#5f605e;
   --light-round-color: #5f605e;
@@ -27,9 +26,8 @@
   --body-color: #303030;
   --input-area-color: #444444;
   --button-color: white;
-  --num-hover-back-color: rgba(236, 236, 236, 0.205);
   --num-hover-color: #fa5360;
-} */
+}
 body {
     background-color: #e0e0e0;
 }
@@ -47,7 +45,7 @@ body {
 }
 
 .display {
-    height: 30%;
+    height: 24%;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -95,7 +93,7 @@ main button {
     transition: all ease 200ms;
 }
 main button:hover{
-    background-color: var(--num-hover-back-color);
+    background-color: var(--round-color);
     border-radius: 50%;
     color: var(--num-hover-color);
 }
@@ -126,4 +124,16 @@ main button:hover{
 
 .input #big:hover{
     transform: scale(0.95);
+}
+
+#theme{
+    width: 16px;
+    height: 16px;
+    background-color: var(--button-color);
+    border-radius: 50%;
+    margin: 10px;
+}
+footer {
+    display: flex;
+    justify-content: end;
 }
