@@ -1,0 +1,38 @@
+@media (max-width: 480px) {
+    .container{
+        width: 100vw;
+        height: 100vh;
+        border: none;
+        overflow:hidden;
+        margin: 0;
+        padding: 0;
+        border-radius: 0px;
+    }
+    
+    main button{
+        font-size: 30px;
+    }
+
+    .entry-point{
+            height: 70%;
+    }
+
+    .input{
+        grid-template-columns: repeat(4, 8vmax);
+        grid-template-rows: repeat(5, 8vmax);
+    }
+
+    .display p{
+        font-size: 24px;
+    }
+
+    .display h1{
+        font-size: 90px;
+        margin-top: 0px;
+    }
+
+    #theme{
+        width: 30px;
+        height: 30px;
+    }
+ }
