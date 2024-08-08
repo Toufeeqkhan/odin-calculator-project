@@ -7,9 +7,10 @@
     box-sizing: border-box;
     font-family: "Zen Maru Gothic", serif;
 }
-button:active,
-button:active {
-   background-color: initial;
+button{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 :root{
   --permanent-color :#fa5260;
@@ -47,7 +48,8 @@ body {
     align-items: end;
      justify-content: end; 
      align-self: flex-end; 
-
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .display > h1{
@@ -111,7 +113,7 @@ main button:hover{
    border-radius: 10px;
 }
 
-.input #big {
+.input #equal {
     grid-column: span 2;
     border-radius: 0px;
     border-radius: 5rem;
@@ -121,7 +123,7 @@ main button:hover{
     transition: all ease 200ms;
 }
 
-.input #big:hover{
+.input #equal:hover{
     transform: scale(0.95);
 }
 
@@ -131,4 +133,5 @@ main button:hover{
     background-color: var(--button-color);
     border-radius: 50%;
     margin: 10px;
+    transition: all ease 200ms;
 }

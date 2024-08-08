@@ -24,11 +24,11 @@
     }
 
     .display p{
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .display h1{
-        font-size: 90px;
+        font-size: 12vmax;
         margin-top: 0px;
     }
 
@@ -41,8 +41,8 @@
  @media (max-width: 480px) and  (max-height: 900px){
 
     .input{
-        grid-template-columns: repeat(4, 9.5vmax);
-        grid-template-rows: repeat(5, 9.5vmax);
-        gap: 28px;
+        grid-template-columns: repeat(4, 10vmax);
+        grid-template-rows: repeat(5, 10vmax);
+        gap: 22px;
     }
  }
