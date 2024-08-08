@@ -7,21 +7,24 @@
     box-sizing: border-box;
     font-family: "Zen Maru Gothic", serif;
 }
-button{
+
+button {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
 }
-:root{
-  --permanent-color :#fa5260;
-  --round-color :#f8e2e3;
-  --light-round-color: #efd6d9;
-  --dark-shadow-color: #efd6d9;
-  --body-color: white;
-  --input-area-color: #f8f8f8;
-  --button-color: black;
-  --num-hover-color: #fa5360;
+
+:root {
+    --permanent-color: #fa5260;
+    --round-color: #f8e2e3;
+    --light-round-color: #efd6d9;
+    --dark-shadow-color: #efd6d9;
+    --body-color: white;
+    --input-area-color: #f8f8f8;
+    --button-color: black;
+    --num-hover-color: #fa5360;
 }
+
 body {
     background-color: #e0e0e0;
 }
@@ -35,7 +38,7 @@ body {
     border-radius: 1rem;
     background-color: var(--body-color);
     box-shadow: 5px 5px 10px hsla(0, 0%, 25%, 0.336),
-    -5px -5px 10px hsla(0, 0%, 78%, 0.301);
+        -5px -5px 10px hsla(0, 0%, 78%, 0.301);
     display: flex;
     flex-direction: column;
 }
@@ -46,28 +49,29 @@ body {
     display: flex;
     flex-direction: column;
     align-items: end;
-     justify-content: end; 
-     align-self: flex-end; 
-     width: 100%;
-overflow: hidden;
-white-space: nowrap;
-text-overflow: ellipsis;
+    justify-content: end;
+    align-self: flex-end;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
-.display > h1{
+.display>h1 {
     color: var(--permanent-color);
     font-size: 60px;
     margin-top: 1rem;
     min-height: 90px;
-
+    text-align: end;
 }
 
-.display > p{
+.display>p {
     color: #b2b2b2;
+    text-align: end;
 }
 
 .entry-point {
-    height:70%;
+    height: 70%;
     background-color: var(--input-area-color);
     border-radius: 1rem;
     display: flex;
@@ -87,7 +91,8 @@ text-overflow: ellipsis;
 }
 
 main button {
-    border-style: none;background-color: var(--input-area-color);
+    border-style: none;
+    background-color: var(--input-area-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,11 +101,13 @@ main button {
     transition: all ease 200ms;
     font-size: 18px;
 }
-main button:hover{
+
+main button:hover {
     background-color: var(--round-color);
     border-radius: 50%;
     color: var(--num-hover-color);
 }
+
 .input .round {
     text-align: center;
     color: var(--permanent-color);
@@ -113,8 +120,8 @@ main button:hover{
     font-size: 16px;
 }
 
-.input .round:hover{
-   border-radius: 10px;
+.input .round:hover {
+    border-radius: 10px;
 }
 
 .input #equal {
@@ -127,11 +134,11 @@ main button:hover{
     transition: all ease 200ms;
 }
 
-.input #equal:hover{
+.input #equal:hover {
     transform: scale(0.95);
 }
 
-#theme{
+#theme {
     width: 16px;
     height: 16px;
     background-color: var(--button-color);
